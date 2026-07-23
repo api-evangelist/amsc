@@ -1,7 +1,26 @@
 aid: amsc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amsc.png
 name: AMSC
-description: AMSC is a company surfaced as a portfolio company of battery-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: American Superconductor Corporation (AMSC) is a power control systems company headquartered
+  in Ayer, Massachusetts, and traded publicly on NASDAQ under the ticker AMSC. The company designs and
+  delivers grid and power-electronics solutions across three specialties - power supply, power protection,
+  and power innovation - serving the energy, renewables, utility, industrial, materials, and military
+  sectors. Its offerings span grid capacity and resiliency systems, renewable generation integration,
+  industrial process power control, and shipboard power protection for naval defense. AMSC is an early
+  Battery Ventures portfolio investment. AMSC does not currently publish a public developer API, SDK,
+  or developer portal; this profile captures the company's corporate identity and domain security posture
+  within the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/amsc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +33,34 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Energy
+- Power Systems
+- Grid
+- Renewables
+- Utilities
+- Industrial
+- Defense
 apis: []
+common:
+- type: DomainSecurity
+  url: security/amsc-domain-security.yml
+- type: Website
+  url: https://www.amsc.com/
+- type: Support
+  url: https://www.amsc.com/contact-us/
+- type: Blog
+  url: https://www.amsc.com/about-us/news/
+- type: PrivacyPolicy
+  url: https://www.amsc.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.amsc.com/tc
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
